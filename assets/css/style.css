@@ -1,3 +1,88 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp'); */
+
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  --backgroundMain: #fff;
+  --colorMain: #000;
+  --activePage: #fdcc45;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'EB Garamond', Times, 'Times New Roman', serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   color: #800080;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+li {
+  padding: .5em 2em;
+  margin-top: 1em;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+li:link {
+  
+}
+
+li:visited {
+
+}
+
+li:hover {
+  background-color: var(--colorMain);
+  color: var(--backgroundMain);
+}
+
+li:active {
+  background-color: var(--activePage);
+}
+
+.main-nav {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid var(--colorMain);
+}
+
+.active {
+  background-color: var(--activePage);
+}
+
+footer {
+  border-top: 1px solid var(--colorMain);
+}
+
+footer p {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
 }
