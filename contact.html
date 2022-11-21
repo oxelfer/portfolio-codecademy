@@ -5,26 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <script type="module" src="./modules/main.js" defer></script>
   <title>Rita Ferreira - Contacts</title>
 </head>
 <body>
   <header>
-    <h1>Contacts</h1>
-    <nav>
+    <nav id="nav-mobile">
+      <div class="mobile-nav">
+        <div class="mobile-top-bar">
+          <a href="./contact.html" class="active">Contact</a>
+          <div class="icon" id="hamburger-icon"><span class="material-symbols-outlined">menu</span></div>
+        </div>
+        <div class="mobile-links" id="toggle-links">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#about">About Me</a>
+          <a href="./index.html#projects">Projects</a>
+          <a href="./index.html#skills">Skills</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-container">
+      <h1 class="main-title">Rita Ferreira - Contacts</h1>
+      <img src="./assets/imgs/Selfie.jpg" alt="Rita Ferreira selfie" class="logo-selfie">
+    </div>
+    <nav id="nav-main">
       <ul class="main-nav">
         <li><a href="./index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li class="active"><a href="./contact.html">Contact</a></li>
+        <li><a href="./index.html#about">About Me</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./index.html#skills">Skills</a></li>
+        <li class="active last-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
-      <article id="contacts">
-        <ul>
+      <article id="contacts" class="article-container">
+        <ul class="article-list">
           <li>Contact 1</li>
           <li>Contact 2</li>
           <li>Contact 3</li>
@@ -33,7 +51,7 @@
     </section>
   </main>
   <footer>
-    <p><span>Created by Rita Ferreira &copy; 2022</span><span>reflexo.oxelfer@gmail.com</span></p>
+    <p class="footer-text"><span class="copyright">Created by Rita Ferreira &copy; 2022</span><span class="email">reflexo.oxelfer@gmail.com</span></p>
   </footer>
 </body>
 </html>

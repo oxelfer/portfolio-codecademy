@@ -5,47 +5,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <script type="module" src="./modules/main.js" defer></script>
   <title>Rita Ferreira - Portfolio</title>
 </head>
 <body>
   <header>
-    <h1>Rita Ferreira - Portfolio</h1>
-    <img src="./assets/imgs/Selfie.jpg" alt="Rita Ferreira selfie">
-    <nav>
+    <nav id="nav-mobile">
+      <div class="mobile-nav">
+        <div class="mobile-top-bar">
+          <a href="./index.html" class="active">Home</a>
+          <div class="icon" id="hamburger-icon"><span class="material-symbols-outlined">menu</span></div>
+        </div>
+        <div class="mobile-links" id="toggle-links">
+          <a href="#about">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-container">
+      <h1 class="main-title">Rita Ferreira - Portfolio</h1>
+      <img src="./assets/imgs/Selfie.jpg" alt="Rita Ferreira selfie" class="logo-selfie">
+    </div>
+    <nav id="nav-main">
       <ul class="main-nav">
         <li class="active"><a href="./index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li class="last-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
-      <article>
-        <p>Rita Ferreira</p>
-        <p>Full-Stack Developer</p>
-        <img src="./assets/imgs/IntroImage.png" alt="Stickman saying hi">
+      <article id="intro" class="intro-container">
+        <div class="front-text">
+          <p class="front-text-main">Rita Ferreira</p>
+          <p class="front-text-secondary">Full-Stack Developer</p>
+        </div>
+        <img src="./assets/imgs/IntroImage.png" alt="Stickman saying hi" class="img-front">
       </article>
     </section>
     <section>
-      <article id="about">
-        <h2>About Me</h2>
-        <p>I’m currently an architect but have been thinking about changing careers for some time. And since I’ve always been curious about programming I though that now would be a good time to do so, to learn new skills and acquire knowledge in that broad field. At first, I had to research about what area of programming would be satisfying for me, trying to situate myself in such a vast and brave new world. Given my professional background, I found that Web/App Development could be the right way to go, since it combines a visual, presentational side with the abstractness inherent to programming. I’m excited to begin this new venture and hope I learn a lot along the way!</p>
+      <article id="about" class="article-container">
+        <h2 class="article-title">About Me</h2>
+        <p class="article-text">I’m an architect but have been thinking about changing careers for some time. And since I’ve always been curious about programming I though that now would be a good time to do so, to learn new skills and acquire knowledge in that broad field. At first, I had to research about what area of programming would be satisfying for me, trying to situate myself in such a vast and brave new world. Given my professional background, I found that Web/App Development could be the right way to go, since it combines a visual, presentation side with the abstraction inherent to programming. I’m excited to begin this new venture and hope I learn a lot along the way!</p>
       </article>
-      <article id="projects">
-        <h2>Projects</h2>
-        <ul>
+      <article id="projects" class="article-container">
+        <h2 class="article-title">Projects</h2>
+        <ul class="article-list">
           <li>Project 1</li>
           <li>Project 2</li>
           <li>Project 3</li>
         </ul>
       </article>
-      <article id="skills">
-        <h2>Skills</h2>
-        <ul>
+      <article id="skills" class="article-container">
+        <h2 class="article-title">Skills</h2>
+        <ul class="article-list">
           <li>Skill 1</li>
           <li>Skill 2</li>
           <li>Skill 3</li>
@@ -54,7 +73,7 @@
     </section>
   </main>
   <footer>
-    <p><span>Created by Rita Ferreira &copy; 2022</span><span>reflexo.oxelfer@gmail.com</span></p>
+    <p class="footer-text"><span class="copyright">Created by Rita Ferreira &copy; 2022</span><span class="email">reflexo.oxelfer@gmail.com</span></p>
   </footer>
 </body>
 </html>
