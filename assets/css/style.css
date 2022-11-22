@@ -171,6 +171,22 @@ ul.main-nav {
   text-align: center;
 }
 
+.article-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-list-item img {
+  max-width: 5em;
+  margin: 1em;
+}
+
+.article-list-item img:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
 .footer-text {
   font-weight: 700;
 }
