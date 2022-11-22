@@ -5,9 +5,9 @@
 :root {
   box-sizing: border-box;
   font-size: 16px;
-  --backgroundMain: #ddd;
-  --colorMain: #000;
-  --activePage: #fdcc45;
+  --backgroundMain: rgb(221, 221, 221);
+  --colorMain: rgb(0, 0, 0);
+  --activePage: rgb(253, 204, 69);
 }
 
 *,
@@ -189,6 +189,8 @@ ul.main-nav {
 
 
 @media (max-width: 768px) {
+  
+  /* All changes concerning navigation menus: change to mobile version */
   #nav-main {
     display: none;
   }
@@ -212,8 +214,7 @@ ul.main-nav {
   }
 
   .mobile-links {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 
   .mobile-nav a {
@@ -254,4 +255,28 @@ ul.main-nav {
     padding: .5em;
   }
 
+  /* Changes display to single column in mobile version - intro article */
+  .intro-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .front-text p{
+    text-align: center;
+  }
+
+  .img-front {
+    max-width: 100%;
+    margin-top: 2em;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
 }
